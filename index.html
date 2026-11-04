@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Mijn Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,12 +21,11 @@
         <nav class="navigatie">
             <a href="#over-mij">Over mij</a>
             <a href="#interview">Opleiding</a>
-            <a href="#vaardigheden">Wat heb ik geleerd</a>
+            <a href="#vaardigheden">Leerdoelen</a>
             <a href="#ervaring">Mijn ervaring</a>
             <a href="#favorieten">Mijn favorieten</a>
             <a href="#contact">Contact</a>
             <a href="#projecten">Mijn projecten</a>
-            <a href="#video">Mijn video</a>
 
         </nav>
 
@@ -95,7 +95,6 @@
 
                 <p class="section-label">
                     INTERVIEW OVER DE OPLEIDING SOFTWARE DEVELOPER </p>
-
 
                 <h2>Interview met May</h2>
 
@@ -207,7 +206,7 @@
         <!-- WAT HEB IK GELEERD -->
         <section class="vaardigheden" id="vaardigheden">
 
-            <h2>Wat heb ik geleerd?</h2>
+            <h2>Wat heb ik geleerd? Hierstaat mijn leerdoelen en wat heb ik geleerd.</h2>
 
             <p class="vaardigheden-intro">
                 Tijdens mijn opleiding Software Developer
@@ -247,10 +246,84 @@
                         verschillende schermformaten.
                     </p>
                 </div>
-
             </div>
+            <h3>Leerdoelen</h3>
+            <table class="vaardigheden-tabel">
+                <h3>Mijn toekomstige leerdoelen</h3>
 
-        </section>
+                <table class="vaardigheden-tabel">
+                    <thead>
+                        <tr>
+                            <th>Vaardigheid</th>
+                            <th>Wat wil ik later leren?</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Programmeertalen</td>
+                            <td>JavaScript, Python en PHP leren programmeren.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Databasebeheer</td>
+                            <td>Leren werken met SQL en databases.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Front-end development</td>
+                            <td>Interactieve en gebruiksvriendelijke websites ontwikkelen.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Back-end development</td>
+                            <td>Leren hoe servers en applicaties werken.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Git en GitHub</td>
+                            <td>Code beheren en samenwerken met andere developers.</td>
+                        </tr>
+
+                        <tr>
+                            <td>UI/UX Design</td>
+                            <td>Gebruiksvriendelijke websites en applicaties ontwerpen.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Artificial Intelligence</td>
+                            <td>Leren werken met AI en Machine Learning.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Problem-solving</td>
+                            <td>Programmeerproblemen analyseren en oplossen.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!-- MIJN FAVORIETEN -->
@@ -261,16 +334,19 @@
             <p class="section-label">MIJN FAVORIETEN</p>
             <p>Mijn favoriete muziek instrument om te luisteren is piano.<br>
                 Ik vind ludovico Enoudi pianest heel inspirerend.</p>
-            <p>Mijn favoerite boek is Witte nachten voor Fjodor Dostojevski, maar ik heb het gelez in Arabisch versie
+            <p>Mijn favoerite boek is Witte nachten voor Fjodor Dostojevski, maar ik heb het gelezen in Arabisch versie
             </p>
             <p>Mijn favoerite sport is tennis</p>
             <div class="favoerieten-audio">
-                <iframe width="300" height="170" src="https://www.youtube.com/embed/kNKu1uNBVkU"
-                    title="Mijn favoriete liedje" allow="encrypted-media" allowfullscreen>
-                </iframe>
+                <video src="video/song.mp4" controls></video>
+
+                <!-- <iframe width="1035" height="582" src="https://www.youtube.com/embed/kNKu1uNBVkU"
+                    title="Andra Day - Rise Up [Audio]" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
             </div>
             <p>Deze liedje spreekt me aan omdat het laat zien dat je ondanks moeilijke momenten hoop kunt blijven
-                houdeen</p>
+                houden.</p>
 
             <div class="favoerieten-foto">
                 <img src="favoeriete.jpg" alt="Een schilderij als een skitch van Firda Kahlo ">
@@ -282,6 +358,8 @@
 
 
         </section>
+
+        <!-- projecten -->
         <section class="projecten" id="projecten">
 
             <p class="section-label">MIJN PROJECTEN</p>
@@ -320,27 +398,6 @@
 
         </section>
 
-
-<section class="video" id="video">
-
-    <p class="section-label">MIJN VIDEO</p>
-
-    <h2>Een kijkje in de wereld van Software Development</h2>
-
-    <p>
-        In deze video ontdek je meer over websites,
-        programmeren en software development.
-    </p>
-
-    <div class="video-container">
-        <iframe
-            src=""
-            title="Software Development"
-            allowfullscreen>
-        </iframe>
-    </div>
-
-</section>
     </main>
 
 
@@ -360,10 +417,21 @@
             <p><strong>E-mailadres:</strong></p>
             <p>SamahSulaiman@gmail.com</p>
 
-            <p class="contact-bericht">
-                Heb je een vraag over mijn opleiding of portfolio?
-                Je bent van harte welkom!
-            </p>
+            <form class="contact-form">
+
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" name="naam" required>
+
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" rows="5" required></textarea>
+
+                <button type="submit">Verzenden</button>
+
+            </form>
 
             <a href="mailto:SamahSulaiman@gmail.com">
                 Stuur mij een e-mail
