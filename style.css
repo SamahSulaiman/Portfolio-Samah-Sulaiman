@@ -1,10 +1,10 @@
+/* GENERAL */
 * {
     box-sizing: border-box;
 }
 
-
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,12 +14,17 @@ body {
     color: #333333;
 }
 
+main {
+    padding: 40px 5%;
+}
 
 
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
     padding: 20px 5%;
     background-color: white;
 }
@@ -30,34 +35,89 @@ body {
     display: block;
 }
 
+
+/* NAVIGATION */
 .navigatie {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .navigatie a {
+    display: inline-block;
+    padding: 10px 14px;
     text-decoration: none;
-    color: #333333;
-    font-size: 16px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navigatie a:nth-child(1) {
+    background-color: #e8bfcb;
+    color: #593c49;
+    border-radius: 14px;
+}
+
+.navigatie a:nth-child(2) {
+    background-color: #d8c6e8;
+    color: #4d3a60;
+    border-radius: 20px;
+}
+
+.navigatie a:nth-child(3) {
+    background-color: #d8e2d1;
+    color: #40533d;
+    border-radius: 12px;
+}
+
+.navigatie a:nth-child(4) {
+    background-color: #f1e2c9;
+    color: #66523d;
+    border-radius: 8px;
+}
+
+.navigatie a:nth-child(5) {
+    background-color: #e5d5d0;
+    color: #593c49;
+    border-radius: 16px;
+}
+
+.navigatie a:nth-child(6) {
+    background-color: #ead9e8;
+    color: #593c49;
+    border-radius: 14px;
+}
+
+.navigatie a:nth-child(7) {
+    background-color: #D8C6E8;
+    color: #4d3a60;
+    border-radius: 16px;
+}
+
+.navigatie a:nth-child(8) {
+    background-color:#f1e2c9;
+    color: #66523d;
+    border-radius: 12px;
+
+
+
 }
 
 .navigatie a:hover {
-    color: #888888;
+    transform: translateY(-3px);
+    filter: brightness(0.96);
 }
 
-main {
-    padding: 50px 5%;
-}
 
-/* Welcome section */
+/* WELCOME */
 .welcome {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 60px;
-    padding: 80px 9%;
-    min-height: 400px;
+    padding: 70px 9%;
+    min-height: 430px;
     background-color: #faf8f6;
 }
 
@@ -71,12 +131,12 @@ main {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-bottom: 50px;
+    margin: 0 0 35px;
 }
 
 .welcome-tekst h1 {
     color: #302b2c;
-    font-size: 48px;
+    font-size: 20px;
     line-height: 1.2;
     margin: 0 0 24px;
 }
@@ -85,26 +145,7 @@ main {
     color: #696263;
     font-size: 17px;
     line-height: 1.9;
-    margin-bottom: 30px;
-}
-
-.welcome-knop {
-    display: inline-block;
-    padding: 14px 25px;
-    background-color: #b88f98;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.welcome-knop:hover {
-    background-color: #98717a;
-}
-
-.welcome-knop span {
-    margin-left: 10px;
+    margin: 0;
 }
 
 .welcome-foto {
@@ -121,12 +162,393 @@ main {
     border-radius: 12px;
 }
 
-/* Mobile layout */
+
+/* SHARED SECTION LABEL */
+.section-label {
+    color: #9b777e;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 30px;
+}
+
+
+/* OVER MIJ */
+.over-mij {
+    padding: 65px 9%;
+    background-color: #f5f5f5;
+}
+
+.over-mij-tekst {
+    max-width: 850px;
+    margin: 0;
+    padding: 0;
+}
+
+.over-mij-tekst p:not(.section-label) {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0 0 18px;
+}
+
+
+/* INTERVIEW */
+.interview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 65px 9%;
+    background-color: #faf8f6;
+}
+
+.interview-tekst {
+    flex: 1;
+    max-width: 700px;
+}
+
+.interview-tekst h2 {
+    color: #6d3365;
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.interview-tekst h3 {
+    color: #9b777e;
+    font-size: 17px;
+    margin: 22px 0 8px;
+}
+
+.interview-tekst p:not(.section-label) {
+    color: #6d3365;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.interview-foto {
+    flex: 0 0 280px;
+}
+
+.interview-foto img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+}
+
+
+
+
+/* MIJN ERVARING */
+.ervaring {
+    padding: 65px 9%;
+    background-color: #f5f5f5;
+}
+
+.ervaring-onderdeel {
+    display: flex;
+    align-items: baseline;
+    gap: 35px;
+    margin-bottom: 28px;
+}
+
+.ervaring-onderdeel h3 {
+    color: #9b777e;
+    font-size: 18px;
+    min-width: 150px;
+    margin: 0;
+}
+
+.ervaring-onderdeel p {
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 750px;
+}
+
+
+/* WAT HEB IK GELEERD */
+.vaardigheden {
+    padding: 65px 9%;
+    background-color: #faf8f6;
+}
+
+.vaardigheden h2 {
+    color: #9b777e;
+    font-size: 26px;
+    margin: 0 0 15px;
+}
+
+.vaardigheden-intro {
+    color: #6d3365;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+.vaardigheden-kaarten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vaardigheid {
+    flex: 1 1 220px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #eadde2;
+    border-radius: 14px;
+    transition: transform 0.3s;
+}
+
+.vaardigheid:hover {
+    transform: translateY(-4px);
+}
+
+.vaardigheid h3 {
+    color: #6d3365;
+    margin: 0 0 12px;
+}
+
+.vaardigheid p {
+    color: #696263;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* MIJN FAVORIETEN */
+.favorieten {
+    padding: 65px 9%;
+    background-color: #f5f5f5;
+    min-height: 180px;
+}
+
+.favorieten p {
+    color: maroon;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.favoerieten-foto img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+}
+
+.favoerieten-audio {
+    margin-top: 20px;
+}
+
+.favoerieten-audio iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+/*-- project --*/
+
+.projecten {
+    padding: 40px 9%;
+    background-color: #faf8f6;
+}
+
+.projecten .section-label {
+    margin-bottom: 20px;
+}
+
+.projecten-lijst {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 750px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #eadde2;
+    border-radius: 12px;
+}
+
+.project-item h3 {
+    color: #6d3365;
+    font-size: 16px;
+    margin: 0 0 7px;
+}
+
+.project-item p {
+    color: #696263;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.project-item span {
+    color: #9b777e;
+    background-color: #f5e9ed;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.project-image {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.project-image.show {
+    display: block;
+}
+
 @media (max-width: 700px) {
+    .projecten {
+        padding: 35px 6%;
+    }
+
+    .project-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+
+/* MIJN VIDEO */
+
+.video {
+    padding: 65px 9%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.video p:not(.section-label) {
+    color: #6d3365;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+.video-container {
+    max-width: 700px;
+    margin: 30px auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* CONTACT */
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 45px 9%;
+    background-color: #faf8f6;
+}
+
+.contact-inhoud {
+    width: 300px;
+    text-align: left;
+    color: #6d3365;
+}
+
+.contact-inhoud h2 {
+    color: #9b777e;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.contact-inhoud p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 6px 0;
+}
+
+.contact-bericht {
+    margin-top: 18px !important;
+}
+
+.contact-inhoud a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 15px;
+    background-color: #e8bfcb;
+    color: #593c49;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-inhoud a:hover {
+    background-color: #d8c6e8;
+}
+
+
+/* TABLET AND MOBILE */
+@media (max-width: 900px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navigatie {
+        justify-content: center;
+    }
+
+    .welcome {
+        padding: 50px 6%;
+        gap: 30px;
+    }
+
+    .welcome-tekst h1 {
+        font-size: 38px;
+    }
+
+    .interview {
+        gap: 30px;
+    }
+
+    .interview-foto {
+        flex-basis: 230px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 20px 3%;
+    }
+
+    .navigatie a {
+        font-size: 13px;
+        padding: 9px 11px;
+    }
+
     .welcome {
         flex-direction: column;
         align-items: stretch;
-        gap: 35px;
+        gap: 30px;
         padding: 40px 6%;
     }
 
@@ -134,29 +556,43 @@ main {
         font-size: 36px;
     }
 
+    .welcome-foto {
+        justify-content: center;
+    }
+
     .welcome-foto img {
         max-width: 100%;
         height: 350px;
     }
+
+
+    .interview {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .interview-foto {
+        width: 100%;
+        max-width: 300px;
+        flex-basis: auto;
+    }
+
+    .ervaring-onderdeel {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .vaardigheden-kaarten {
+        flex-direction: column;
+    }
+
+    .project,
+    .video {
+        padding: 45px 6%;
+    }
+
+    .footer {
+        justify-content: flex-start;
+        padding: 35px 6%;
+    }
 }
-
-/* Over mij section */
-
-
-.over-mij-tekst {
-    flex: 1;
-    max-width: 400;
-}
-
-.over-mij-tekst p {
-    color: hotpink 
-    font-size: 48px;
-    line-height: 1.2;
-    margin: 0 0 25px;
-}
-.over-mij-beschrijving {
-    color: #6d3365;
-    font-size: 17px;
-    line-height: 1.9;
-    margin-bottom: 30px;
-
