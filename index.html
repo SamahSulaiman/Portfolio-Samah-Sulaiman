@@ -42,6 +42,7 @@
                     WELKOM OP MIJN PORTFOLIO!
                 </p>
 
+
                 <h1>Hallo, ik ben Samah!</h1>
 
                 <p class="welcome-beschrijving">
@@ -247,81 +248,63 @@
                     </p>
                 </div>
             </div>
-            <h3>Leerdoelen</h3>
+        </section>
+        <section class="leerdoelen" id="leerdoelen">
+
+            <h3>Mijn toekomstige leerdoelen</h3>
+
             <table class="vaardigheden-tabel">
-                <h3>Mijn toekomstige leerdoelen</h3>
+                <thead>
+                    <tr>
+                        <th>Vaardigheid</th>
+                        <th>Wat wil ik later leren?</th>
+                    </tr>
+                </thead>
 
-                <table class="vaardigheden-tabel">
-                    <thead>
-                        <tr>
-                            <th>Vaardigheid</th>
-                            <th>Wat wil ik later leren?</th>
-                        </tr>
-                    </thead>
+                <tbody>
+                    <tr>
+                        <td>Programmeertalen</td>
+                        <td>JavaScript, Python en PHP leren programmeren.</td>
+                    </tr>
 
-                    <tbody>
-                        <tr>
-                            <td>Programmeertalen</td>
-                            <td>JavaScript, Python en PHP leren programmeren.</td>
-                        </tr>
+                    <tr>
+                        <td>Databasebeheer</td>
+                        <td>Leren werken met SQL en databases.</td>
+                    </tr>
 
-                        <tr>
-                            <td>Databasebeheer</td>
-                            <td>Leren werken met SQL en databases.</td>
-                        </tr>
+                    <tr>
+                        <td>Front-end development</td>
+                        <td>Interactieve en gebruiksvriendelijke websites ontwikkelen.</td>
+                    </tr>
 
-                        <tr>
-                            <td>Front-end development</td>
-                            <td>Interactieve en gebruiksvriendelijke websites ontwikkelen.</td>
-                        </tr>
+                    <tr>
+                        <td>Back-end development</td>
+                        <td>Leren hoe servers en applicaties werken.</td>
+                    </tr>
 
-                        <tr>
-                            <td>Back-end development</td>
-                            <td>Leren hoe servers en applicaties werken.</td>
-                        </tr>
+                    <tr>
+                        <td>Git en GitHub</td>
+                        <td>Code beheren en samenwerken met andere developers.</td>
+                    </tr>
 
-                        <tr>
-                            <td>Git en GitHub</td>
-                            <td>Code beheren en samenwerken met andere developers.</td>
-                        </tr>
+                    <tr>
+                        <td>UI/UX Design</td>
+                        <td>Gebruiksvriendelijke websites en applicaties ontwerpen.</td>
+                    </tr>
 
-                        <tr>
-                            <td>UI/UX Design</td>
-                            <td>Gebruiksvriendelijke websites en applicaties ontwerpen.</td>
-                        </tr>
+                    <tr>
+                        <td>Artificial Intelligence</td>
+                        <td>Leren werken met AI en Machine Learning.</td>
+                    </tr>
 
-                        <tr>
-                            <td>Artificial Intelligence</td>
-                            <td>Leren werken met AI en Machine Learning.</td>
-                        </tr>
+                    <tr>
+                        <td>Problem-solving</td>
+                        <td>Programmeerproblemen analyseren en oplossen.</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                        <tr>
-                            <td>Problem-solving</td>
-                            <td>Programmeerproblemen analyseren en oplossen.</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
 
 
 
@@ -416,6 +399,7 @@
 
             <p><strong>E-mailadres:</strong></p>
             <p>SamahSulaiman@gmail.com</p>
+            <h1>Heeft u een vraag? Ik reageer graag op uw.</h1>
 
             <form class="contact-form">
 
@@ -440,19 +424,6 @@
         </div>
 
     </footer>
-
-    <script>
-        document.querySelectorAll(".project-item").forEach(card => {
-            card.addEventListener("click", () => {
-                const image = card.querySelector(".project-image");
-
-                if (image) {
-                    image.classList.toggle("show");
-                }
-            });
-        });
-    </script>
-
 </body>
 
 </html>

@@ -207,7 +207,7 @@ main {
 .interview-tekst h2 {
     color: #6d3365;
     font-size: 28px;
-    line-height: 1, 9;
+    line-height: 1.9;
     margin: 0 0 20px;
 }
 
@@ -306,7 +306,7 @@ main {
 }
 
 .vaardigheid h3 {
-    color: #6d3365;
+    color: #837280;
     margin: 0 0 12px;
 }
 
@@ -321,15 +321,24 @@ main {
 
 /* VAARDIGHEDEN TABEL */
 
+
 .vaardigheden-tabel {
-    width: 100%;
-    max-width: 750px;
-    margin-top: 30px;
+    width: 40%;
+    max-width: 40%;
+    margin: 25px 0 0;
     border-collapse: collapse;
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
 }
+
+.leerdoelen {
+    padding: 45px 9% 65px;
+    background-color: #faf8f6;
+}
+
+
+
 
 .vaardigheden-tabel th {
     background-color: #e8bfcb;
@@ -343,7 +352,6 @@ main {
     color: #6d3365;
     border-bottom: 1px solid #eadde2;
 }
-
 
 .vaardigheden-tabel tr:last-child td {
     border-bottom: none;
@@ -361,7 +369,7 @@ main {
 .favorieten p {
     color: maroon;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.9;
     margin: 0;
 }
 
@@ -486,6 +494,12 @@ main {
     margin: 6px 0;
 }
 
+.contact-inhoud h1 {
+    color: #563552;
+    font-size: 15px;
+    margin: 0 0 20px;
+}
+
 .contact-bericht {
     margin-top: 18px !important;
 }
@@ -523,10 +537,10 @@ main {
 
 
 .contact-form input,
-.contact textarea {
+.contact-form textarea {
     width: 100%;
-    padding: 12px,
-        border-redius:10px;
+    padding: 12px;
+    border-radius: 10px;
     background-color: #faf8f6;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -652,5 +666,3 @@ main {
         padding: 35px 6%;
     }
 }
-
-
