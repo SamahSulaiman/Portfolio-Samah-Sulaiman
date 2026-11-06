@@ -93,6 +93,7 @@ main {
     color: #4d3a60;
     border-radius: 16px;
 }
+
 .navigatie .nav-projecten {
     background-color: #D8C6E8;
     color: #4d3a60;
@@ -219,13 +220,18 @@ main {
 
 .interview-tekst h3 {
     color: #9b777e;
-    font-size: 17px;
+    font-size: 19px;
     margin: 22px 0 8px;
+}
+
+.interview-tekst .interview-title {
+    font-size: 23px;
+    margin: 15px 0 20px;
 }
 
 .interview-tekst p:not(.section-label) {
     color: #563552;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 0 0 12px;
 }
@@ -329,8 +335,8 @@ main {
 
 
 .vaardigheden-tabel {
-    width: 40%;
-    max-width: 40%;
+    width: 100%;
+    max-width: 850px;
     margin: 25px 0 0;
     border-collapse: collapse;
     background-color: white;
