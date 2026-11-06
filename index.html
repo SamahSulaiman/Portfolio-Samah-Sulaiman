@@ -21,11 +21,12 @@
         <nav class="navigatie">
             <a href="#over-mij">Over mij</a>
             <a href="#interview">Opleiding</a>
-            <a href="#vaardigheden">Leerdoelen</a>
+            <a href="#vaardigheden">vaardigheden</a>
+            <a href="#leerdoelen">Leerdoelen</a>
             <a href="#ervaring">Mijn ervaring</a>
             <a href="#favorieten">Mijn favorieten</a>
-            <a href="#contact">Contact</a>
-            <a href="#projecten">Mijn projecten</a>
+            <a href="#projecten" class="nav-projecten">Mijn projecten</a>
+           <a href="#contact" class="nav-contact">Contact</a>
 
         </nav>
 
@@ -66,7 +67,7 @@
 
             <div class="over-mij-tekst">
 
-                <p class="section-label">OVER MIJ</p>
+                <h2 class="section-label">OVER MIJ</h2>
 
                 <p>
                     Ik heet Samah, ik kom uit Syrië, daar ben ik geboren en ik ben oorspronkelijk uit Palastiena.<br> Ik
@@ -94,10 +95,11 @@
 
             <div class="interview-tekst">
 
-                <p class="section-label">
-                    INTERVIEW OVER DE OPLEIDING SOFTWARE DEVELOPER </p>
+                <h2 class="section-label">
+                    INTERVIEW OVER DE OPLEIDING SOFTWARE DEVELOPER
+                </h2>
 
-                <h2>Interview met May</h2>
+                <h3>Interview met May</h3>
 
                 <p>
                     Voor dit interview heb ik mijn klasgenoot May gevraagd
@@ -151,16 +153,15 @@
         <!-- MIJN ERVARING -->
         <section class="ervaring" id="ervaring">
 
-            <p class="section-label">MIJN ERVARING</p>
+            <h2 class="section-label">MIJN ERVARING</h2>
 
             <div class="ervaring-onderdeel">
                 <h3>School</h3>
 
                 <p>
-                    Ik volg de opleiding Software Developer.
-                    Tijdens mijn opleiding leer ik websites bouwen
-                    met HTML en CSS en leer ik programmeren,
-                    IT-skills ontwikkelen en ontwerpen.
+                    Ik volg momenteel de opleiding Software Developer.
+                    Hiervoor heb ik verschillende opleidingen gevolgd,
+                    waarin ik nieuwe kennis en vaardigheden heb opgedaan.
                 </p>
             </div>
 
@@ -168,7 +169,7 @@
                 <h3>Werkervaring</h3>
 
                 <p>
-                    Ik heb ervaring opgedaan in nerderland in de retail.
+                    Ik heb ervaring opgedaan in Nerderland in de retail.
                     Ik hielp klanten, vulde producten aan en
                     zorgde ervoor dat de winkel netjes bleef.
                     Ik heb ook ervaring opgedaan in de horeca
@@ -207,7 +208,7 @@
         <!-- WAT HEB IK GELEERD -->
         <section class="vaardigheden" id="vaardigheden">
 
-            <h2>Wat heb ik geleerd? Hierstaat mijn leerdoelen en wat heb ik geleerd.</h2>
+            <h2>Wat heb ik geleerd?</h2>
 
             <p class="vaardigheden-intro">
                 Tijdens mijn opleiding Software Developer
@@ -251,7 +252,7 @@
         </section>
         <section class="leerdoelen" id="leerdoelen">
 
-            <h3>Mijn toekomstige leerdoelen</h3>
+            <h2>Mijn toekomstige leerdoelen.</h2>
 
             <table class="vaardigheden-tabel">
                 <thead>
@@ -314,7 +315,7 @@
 
         <section class="favorieten" id="favorieten">
 
-            <p class="section-label">MIJN FAVORIETEN</p>
+            <h2 class="section-label">MIJN FAVORIETEN</h2>
             <p>Mijn favoriete muziek instrument om te luisteren is piano.<br>
                 Ik vind ludovico Enoudi pianest heel inspirerend.</p>
             <p>Mijn favoerite boek is Witte nachten voor Fjodor Dostojevski, maar ik heb het gelezen in Arabisch versie
@@ -345,7 +346,7 @@
         <!-- projecten -->
         <section class="projecten" id="projecten">
 
-            <p class="section-label">MIJN PROJECTEN</p>
+            <h2 class="section-label">MIJN PROJECTEN</h2>
 
             <div class="projecten-lijst">
 
@@ -370,7 +371,7 @@
                 <article class="project-item">
                     <div>
                         <h3>Toekomstige projecten</h3>
-                        <p>Hier voeg ik een code op mijn HTML project, want we gaan volgende periode JavaScript leren.
+                        <p>We gaan volgende periode JavaScript leren.
                         </p>
                         <img src="JavaScript.png" alt="code van JavaScript" class="project-image">
                     </div>
@@ -395,11 +396,11 @@
             <p>9034371@student.zadkine.nl</p>
 
             <p><strong>Instagram:</strong></p>
-            <p>@Sama-Sulaiman</p>
+            <p>Sama-Sulaiman</p>
 
             <p><strong>E-mailadres:</strong></p>
             <p>SamahSulaiman@gmail.com</p>
-            <h1>Heeft u een vraag? Ik reageer graag op uw.</h1>
+            <h3>Heeft u een vraag? Ik reageer graag op uw.</h3>
 
             <form class="contact-form">
 
@@ -408,6 +409,8 @@
 
                 <label for="email">E-mailadres</label>
                 <input type="email" id="email" name="email" required>
+                <label for="telefoon">Telefoonnummer</label>
+                <input type="tel" id="telefoon" name="telefoon">
 
 
                 <label for="bericht">Bericht</label>

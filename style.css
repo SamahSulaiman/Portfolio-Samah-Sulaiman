@@ -93,12 +93,19 @@ main {
     color: #4d3a60;
     border-radius: 16px;
 }
-
-.navigatie a:nth-child(8) {
-    background-color: #f1e2c9;
-    color: #66523d;
-    border-radius: 12px;
+.navigatie .nav-projecten {
+    background-color: #D8C6E8;
+    color: #4d3a60;
+    border-radius: 16px;
 }
+
+.navigatie .nav-contact {
+    background-color: #ead9e8;
+    color: #593c49;
+    border-radius: 14px;
+}
+
+
 
 .navigatie a:hover {
     transform: translateY(-5px);
@@ -117,14 +124,11 @@ main {
     background-color: #faf8f6;
 }
 
-.welcome-tekst {
-    flex: 1;
-    max-width: 500px;
-}
+
 
 .welcome-label {
     color: #9b777e;
-    font-size: 20px;
+    font-size: 38px;
     font-weight: bold;
     letter-spacing: 4px;
     margin: 0 0 35px;
@@ -132,7 +136,7 @@ main {
 
 .welcome-tekst h1 {
     color: #302b2c;
-    font-size: 20px;
+    font-size: 38px;
     line-height: 1.2;
     margin: 0 0 24px;
 }
@@ -151,12 +155,14 @@ main {
 }
 
 .welcome-foto img {
-    width: 100%;
-    max-width: 480px;
+    width: 480px;
+    max-width: 100%;
+    flex-shrink: 0;
     height: 430px;
     object-fit: cover;
     border-radius: 12px;
 }
+
 
 
 /* SHARED SECTION LABEL */
@@ -382,14 +388,11 @@ main {
     margin-top: 20px;
 }
 
-.favoerieten-audio {
-    margin-top: 20px;
-}
-
-.favoerieten-audio iframe {
-    max-width: 100%;
+.favoerieten-audio video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
-    border: none;
 }
 
 /*-- project --*/
@@ -494,7 +497,7 @@ main {
     margin: 6px 0;
 }
 
-.contact-inhoud h1 {
+.contact-inhoud h3 {
     color: #563552;
     font-size: 15px;
     margin: 0 0 20px;
@@ -648,17 +651,6 @@ main {
 
     .vaardigheden-kaarten {
         flex-direction: column;
-    }
-
-    .project,
-    .video {
-        padding: 45px 6%;
-    }
-
-    .favoeriten-video {
-        flex-direction: column;
-        max-width: 100%;
-        height: auto;
     }
 
     .footer {
