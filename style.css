@@ -386,7 +386,7 @@ main {
     margin: 0;
 }
 
-.favoerieten-foto img {
+.favorieten-foto img {
     width: 250px;
     height: auto;
     object-fit: contain;
@@ -613,6 +613,12 @@ main {
 
     .interview-foto {
         flex-basis: 230px;
+    }
+
+    .footer {
+        justify-content: flex-start;
+        padding: 14px 6%;
+
     }
 }
 
